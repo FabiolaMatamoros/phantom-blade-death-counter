@@ -1,6 +1,6 @@
 <a id="english"></a>
 
-# ⚔️ Automatic Death Counter for OBS  ( Phantom Blade Zero )
+# Automatic Death Counter for OBS  ( Phantom Blade Zero )
 
 **🇺🇸 English** · [🇪🇸 Español](#espanol)
 
