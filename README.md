@@ -29,7 +29,7 @@ It's a single HTML file — nothing to install. Made by [MistyWaifu](https://twi
 
 Download `contador-muertes.html` from this repo (**Code → Download ZIP**, or open the file and click the download icon). Save it in a folder you won't move, for example `Documents\stream`. If you move it later, you'll need to select it again in OBS.
 
-### 2. Turn on OBS WebSocket and copy your password ⚠️
+### 2. Turn on OBS WebSocket and copy your password 
 
 The counter **will not work** without this step.
 
@@ -40,7 +40,7 @@ The counter **will not work** without this step.
 5. Click **Show Connect Info** → **Copy** next to *Server Password*.
 6. Click **Apply**, then **OK**.
 
-> 🔒 **Never show the *Connect Info* window on stream.** Anyone on your network with that password could control your OBS. If it ever shows up on stream, generate a new one.
+>  **Never show the *Connect Info* window on stream.** Anyone on your network with that password could control your OBS. If it ever shows up on stream, generate a new one.
 
 ### 3. Add your password to the file
 
@@ -109,7 +109,7 @@ Manual buttons only change the **total**. *Current boss* is only changed by auto
 
 ## 🎛️ Stream Deck setup (optional)
 
-If you have a Stream Deck, you can turn those sources into physical buttons. You **don't need** a Twitch plugin or any extra counter plugin — just Elgato's OBS plugin.
+If you have a Stream Deck, you can turn those sources into physical buttons. You **don't need** a Twitch plugin or any extra counter plugin, just Elgato's OBS plugin.
 
 ### 1. Install the OBS Studio plugin
 
@@ -118,7 +118,7 @@ If you have a Stream Deck, you can turn those sources into physical buttons. You
    - from the [Elgato Marketplace](https://marketplace.elgato.com/product/obs-studio-35615969-830f-45c9-ba0a-1a295bba7fec), or
    - inside the Stream Deck app: click the **Plugins** tab on the right, search **OBS Studio**, and install the one **by Elgato**.
 
-> Avoid third-party "death counter" or "win/lose counter" plugins for this — they keep their own number and won't talk to this overlay.
+> Avoid third-party "death counter" or "win/lose counter" plugins for this ( they keep their own number and won't talk to this overlay ) .
 
 ### 2. Create the sources in OBS first
 
@@ -188,7 +188,7 @@ Make sure the game fills the whole `GAME` source at 16:9, with no black bars. Op
 The browser and OBS each keep their own numbers. The one on your stream is the OBS one.
 
 **I get *HTTP ERROR 426* when I open `http://127.0.0.1:4455`.**
-That's a good sign — WebSocket is on. If you get *ERR_CONNECTION_REFUSED* instead, uncheck and recheck *Enable WebSocket server*, click *Apply*, and restart OBS.
+That's a good sign, WebSocket is on. If you get *ERR_CONNECTION_REFUSED* instead, uncheck and recheck *Enable WebSocket server*, click *Apply*, and restart OBS.
 
 ---
 
@@ -213,7 +213,7 @@ MIT — use it, change it, and share it freely. If you use it on stream, a shout
 
 <a id="espanol"></a>
 
-# ⚔️ Contador de muertes automático para OBS — Phantom Blade Zero
+# ⚔️ Contador de muertes automático para OBS  ( Phantom Blade Zero )
 
 [🇺🇸 English](#english) · **🇪🇸 Español**
 
@@ -240,7 +240,7 @@ Es un solo archivo HTML, sin instalar nada. **Es el mismo archivo para inglés y
 
 Descarga `contador-muertes.html` de este repo (**Code → Download ZIP**, o abre el archivo y dale al ícono de descarga). Guárdalo en una carpeta fija, por ejemplo `Documentos\stream`. Si lo mueves después, tienes que volver a elegirlo en OBS.
 
-### 2. Activa el WebSocket de OBS y copia tu contraseña ⚠️
+### 2. Activa el WebSocket de OBS y copia tu contraseña 
 
 Sin este paso el contador **no funciona**.
 
@@ -251,7 +251,7 @@ Sin este paso el contador **no funciona**.
 5. Clic en **Show Connect Info** → **Copy** al lado de *Server Password*.
 6. Dale **Apply** y **OK**.
 
-> 🔒 **Nunca muestres la ventana de *Connect Info* en directo.** Con esa contraseña alguien en tu red podría controlar tu OBS. Si se llega a ver, genera una nueva.
+> **Nunca muestres la ventana de *Connect Info* en directo.** Con esa contraseña alguien en tu red podría controlar tu OBS. Si se llega a ver, genera una nueva.
 
 ### 3. Configura el archivo (contraseña e idioma)
 
@@ -353,12 +353,12 @@ Antes de configurar los botones, crea las fuentes **Text (GDI+)** vacías de la 
 5. La primera vez puede pedirte conectarse a OBS: OBS tiene que estar **abierto**, y la contraseña es la misma del paso 2.
 6. Repite con los otros botones:
 
-| Título del botón | Fuente |
-|---|---|
-| `+1` | `ADD_DEATH` |
-| `-1` | `REMOVE_DEATH` |
-| `JEFE` | `NEW_BOSS` |
-| `RESET` | `RESET_DEATHS` |
+| Título del botón | Fuente | Qué hace |
+|---|---|---|
+| `+1` | `ADD_DEATH` | Suma 1 muerte al total |
+| `-1` | `REMOVE_DEATH` | Resta 1 muerte al total |
+| `JEFE` | `NEW_BOSS` | Pone *Jefe actual* en 0 |
+| `RESET` | `RESET_DEATHS` | Pone todo en 0 |
 
 ### 4. Pruébalo
 
